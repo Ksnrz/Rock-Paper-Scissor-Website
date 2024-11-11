@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="h1-con">
+      <h1 class="title">Rock Paper Scissor</h1>
+      <h2 class="showResult"></h2>
+      <h2 class="showUser"></h2>
+      <p class="score"></p>
+      <button id="reset" onclick="resetScore()">Reset Score</button>
+      <div class="imgShow">
+        <img src="" class="image" />
+      </div>
+    </div>
+
+    <div class="section">
+      <button
+        onclick="startGame('Scissor')"
+        class="mainBtn"
+        id="scissor"
+      ></button>
+      <button onclick="startGame('Rock')" class="mainBtn" id="rock"></button>
+      <button onclick="startGame('Paper')" class="mainBtn" id="paper"></button>
+    </div>
+    <!-- <div class="autoplay-con">
+      <button class="autoplay-btn" onclick="autoPlay()">เล่นอัตโนมัติ</button>
+    </div> -->
+  </body>
+</html>
